@@ -1,0 +1,43 @@
+# ArvYax - Wellness Platform
+
+A full-stack MERN application designed to provide a platform for wellness content creators to share and manage their sessions, and for users to consume this content. The application features a React frontend with a modern UI and a Node.js/Express backend with a MongoDB database.
+
+## ✨ Features
+
+### Frontend
+- **User Authentication:** Secure user registration and login with JWT.
+- **Dashboard:** A personalized dashboard for users to view featured sessions, continue watching, and see their stats.
+- **Session Management:** Creators can create, edit, publish, unpublish, and delete their wellness sessions.
+- **Session Editor:** A rich editor to add details like title, description, duration, level, and content URLs.
+- **Auto-Saving Drafts:** Session drafts are automatically saved to prevent data loss.
+- **Protected Routes:** Frontend routes are protected based on authentication status.
+- **Responsive UI:** The application is built with Tailwind CSS for a responsive experience on all devices.
+- **Toast Notifications:** User-friendly feedback for actions like login, registration, and session management.
+
+### Backend
+- **RESTful API:** A robust API built with Express.js and Mongoose.
+- **CRUD Operations:** Full CRUD functionality for user sessions.
+- **User-Session Association:** Sessions are automatically linked to the logged-in user.
+- **Validation:** Server-side validation of incoming data using `express-validator`.
+- **Centralized Error Handling:** Custom error handling middleware for consistent error responses.
+- **Environment Variables:** Secure management of sensitive information like database connection strings.
+
+## 🛠️ Tech Stack
+
+- **Frontend:**
+  - React (with Vite)
+  - React Router v6
+  - Axios
+  - Tailwind CSS
+  - Material-UI (for icons)
+  - `react-hot-toast`
+
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB (with Mongoose)
+  - JSON Web Tokens (JWT) for authentication
+  - `bcryptjs` for password hashing
+  - `express-validator` for validation
+  - `cors` & `dotenv`
+
