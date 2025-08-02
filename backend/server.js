@@ -25,7 +25,8 @@ app.use(express.json({ extended: false }));
 // Connect to MongoDB
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+        const encodedUri = encodeURI(process.env.MONGODB_URI);
+    const conn = await mongoose.connect(encodedUri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       // The Mongoose driver is smart enough to handle TLS/SSL from the connection string.
